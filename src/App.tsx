@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles';
 
-import { Navbar, Hero, Stats, Business, Billing } from './components';
+import { Navbar, Hero, Stats, Business, Billing, CardDeal } from './components';
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
           <Stats />
           <Business />
           <Billing />
+          <CardDeal />
         </div>
       </div>
     </div>

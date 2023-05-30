@@ -1,7 +1,30 @@
 import React from 'react';
+import { card } from '../assets';
+import styles, { layout } from '../styles';
+import Button from './Button';
 
 function CardDeal() {
-  return <div>CardDeal</div>;
+  return (
+    <section className={layout.section}>
+      <div className={layout.sectionInfo}>
+        <h2 className={styles.heading2}>
+          Find a better card deal <br />
+          in a few easy steps.
+        </h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          Amet consectetur adipisicing elit. Labore sed deserunt voluptatum
+          optio dolore facere suscipit alias magnam deleniti iusto. Quisquam cum
+          mollitia adipisci corrupti asperiores ex iusto neque, sequi amet alias
+          minus officiis fugit labore pariatur aperiam velit, beatae quidem
+          ipsum.
+        </p>
+        <Button styles="mt-10" />
+      </div>
+      <div className={layout.sectionImg}>
+        <img src={card} alt="card-deal" className="w-[100%] h-[100%]" />
+      </div>
+    </section>
+  );
 }
 
 export default CardDeal;
