@@ -9,6 +9,8 @@ import {
   Billing,
   CardDeal,
   Testimonials,
+  Clients,
+  CTA,
 } from './components';
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
           <Billing />
           <CardDeal />
           <Testimonials />
+          <Clients />
+          <CTA />
         </div>
       </div>
     </div>
